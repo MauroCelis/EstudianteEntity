@@ -18,13 +18,10 @@ public class CargarDatabase {
           log.info("Precarga"+repositorio.save(new Student("Carlos","Cabrera","5")));
           log.infor("Precarga"+repositorio.save(new Student("Lalo","Garza","8")));
           ordenadorRepo.save(new Order("Estudiante", Status.COMPLETED));
-
-            ordenadorRepo.save(new Order("Apellido", Status.IN_PROGRESS));
-
-
-
-
+          ordenadorRepo.save(new Order("Apellido", Status.IN_PROGRESS));
+          ordenadorRepo.findAll().forEach(order ->{
+              log.info("Preloaded "+order);
+          });
         };
-
     }
 }

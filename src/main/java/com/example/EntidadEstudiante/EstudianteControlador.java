@@ -1,16 +1,13 @@
 package com.example.EntidadEstudiante;
 
 import jdk.internal.loader.Resource;
-import org.apache.coyote.Response;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import sun.security.util.Resources;
 
 import java.net.URI;
 import java.net.URISyntaxException;
-import java.util.List;
 import java.util.stream.Collectors;
-
 import static org.springframework.hateoas.core.DummyInvocationUtils.methodOn;
 import static org.springframework.hateoas.mvc.ControllerLinkBuilder.linkTo;
 
